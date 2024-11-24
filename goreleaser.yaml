@@ -1,0 +1,12 @@
+project_name: github.com/atcheri/hexagonal-explained
+builds:
+  - id: hexagonal-explained
+    main: ./cmd/http/main.go
+    env:
+    goos:
+      - linux
+      - windows
+      - darwin
+    goarch:
+      - amd64
+      - arm64
